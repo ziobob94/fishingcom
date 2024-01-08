@@ -3,19 +3,19 @@ version: "3.8"
 services:
   client:
     build:
-      context: ./work-to-client
+      context: ./fishingcom-client
       dockerfile: Dockerfile.dev
     ports:
       - "5173:5173"
     volumes:
-      - ./work-to-client:/client
+      - ./fishingcom-client:/client
     depends_on:
       - server
   server:
     build:
-      context: ./work-to-server
+      context: ./fishingcom-server
       dockerfile: Dockerfile.dev
     ports:
       - "8585:8585"
     volumes:
-      - ./work-to-server:/server
+      - ./fishingcom-server:/server
