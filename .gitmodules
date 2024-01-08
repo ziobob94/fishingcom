@@ -1,5 +1,5 @@
 [submodule "fishingcom-client"]
-	path = fishingcom-cient
+	path = fishingcom-client
 	url = https://github.com/ziobob94/fishingcom-client
 [submodule "fishingcom-server"]
 	path = fishingcom-server
