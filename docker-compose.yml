@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  client:
+    build:
+      context: ./work-to-client
+      dockerfile: Dockerfile.dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./work-to-client:/client
+    depends_on:
+      - server
+  server:
+    build:
+      context: ./work-to-server
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8585:8585"
+    volumes:
+      - ./work-to-server:/server

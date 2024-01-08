@@ -1,0 +1,6 @@
+[submodule "work-to-client"]
+	path = work-to-client
+	url = https://github.com/ziobob94/work-to-client
+[submodule "work-to-server"]
+	path = work-to-server
+	url = https://github.com/ziobob94/work-to-server
