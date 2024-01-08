@@ -1,6 +1,6 @@
-[submodule "work-to-client"]
-	path = work-to-client
-	url = https://github.com/ziobob94/work-to-client
-[submodule "work-to-server"]
-	path = work-to-server
-	url = https://github.com/ziobob94/work-to-server
+[submodule "fishingcom-client"]
+	path = fishingcom-cient
+	url = https://github.com/ziobob94/fishingcom-client
+[submodule "fishingcom-server"]
+	path = fishingcom-server
+	url = https://github.com/ziobob94/fishingcom-server
