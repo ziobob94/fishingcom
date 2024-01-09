@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/ziobob94/fishingcom/compare/v1.0.0...v1.0.1) (2024-01-09)
+
+
+### Bug Fixes
+
+* rename ([a0780cd](https://github.com/ziobob94/fishingcom/commit/a0780cdb56769aa861e281af3207bcbc19c9418d))
+
 # 1.0.0 (2024-01-09)
 
 
