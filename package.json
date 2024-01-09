@@ -6,7 +6,7 @@
   "description": "standalone package",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ziobob94/fishingcom"
+    "url": "git+https://github.com/ziobob94/fishingcom.git"
   },
   "release": {
     "branches": [
