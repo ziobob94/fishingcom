@@ -14,7 +14,7 @@ Before immersing yourself in the Fishingcom project, ensure that your local syst
 - **Node.js**: Fishingcom utilizes Node.js for its backend and frontend functionalities. Obtain it from the [official Node.js website](https://nodejs.org/).
 - **Docker**: Ensure Docker is installed on your system. If not, download it from the [official Docker website](https://www.docker.com/products/docker-desktop).
 
-## Setting Up Fishingcom
+## Setting Up Fishingcom for UNIX/macOS platforms
 
 ### 1. Clone the Repository
 - Open your terminal or command prompt.
@@ -43,28 +43,35 @@ This script simplifies submodule installation.
 ### 4. Environment Configuration
 Ensure you modify the `.env` file in each submodule to set up the necessary configurations.
 
-## For Windows Users
+## For Windows platforms
 
 ### 1. Open the Command Prompt
 - Press `Windows + R`, type `cmd`, and hit `Enter`.
+- Navigate to the folder where the app will be located
 
-### 2. Navigate to the Fishingcom Directory
+### 2. Clone the Repository
+- Enter the following command:
+  ```bash
+  git clone https://github.com/ziobob94/fishingcom
+  ```
+
+### 3. Navigate to the Fishingcom Directory
 ```bash
-dir path\to\fishingcom
+dir fishingcom
 ```
 
-### 3. Run the Setup Script
+### 4. Run the Setup Script
 ```bash
 setup.bat --mode=dev
 ```
 
-### 4. Verify the Setup
+### 5. Verify the Setup
 Check for successful configuration messages in the Command Prompt.
 
-### 5. Set Up Environment for Submodules
+### 6. Set Up Environment for Submodules
 For each submodule, finalize the ***.env***  file by adding your preferences and configurations.
 
-### 6. Deploy with Docker
+### 7. Deploy with Docker
 Use the following commands to build and launch Docker containers:
 
 ```bash

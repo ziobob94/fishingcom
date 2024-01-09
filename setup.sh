@@ -40,36 +40,37 @@ OTP_DIGITS=8
 
 GOOGLE_MAPS_API_KEY="
 
-SERVER_ENV_DEV="SERVER_HOST="http://localhost"
+SERVER_ENV_PROD="SERVER_HOST="http://localhost"
 SERVER_PORT=8585
 
 APP_NAME="fishingcom"
 CLIENT_INDEX_PATH="/home/mauro/dev/fishingcom/client/dist"
+
 MODE="prod"
 
-MDB_URI= // ***!!! SETUP THIS !!!***
-MDB_DATABASE= // ***!!! SETUP THIS !!!***
+MDB_URI= // !!! SETUP REQ !!!
+MDB_DATABASE= // !!! SETUP REQ !!!
 
 
 SESSION_DURATION="36000"
 JWT_AUDIENCE="localhost"
 
 #CORS
-ALLOWED_HOSTS= // ***!!! SETUP THIS !!!***
-METHODS= // ***!!! SETUP THIS !!!***
-ALLOWED_HEADERS= // ***!!! SETUP THIS !!!***
-EXPOSED_HEADERS= // ***!!! SETUP THIS !!!***
-CREDENTIALS=true // ??? SETUP THIS ???
-MAXAGE=86400 // ??? SETUP THIS ???
+ALLOWED_HOSTS= // !!! SETUP REQ !!!
+METHODS= // !!! SETUP REQ !!!
+ALLOWED_HEADERS= // !!! SETUP REQ !!!
+EXPOSED_HEADERS= // !!! SETUP REQ !!!
+CREDENTIALS=true // SETUP OPT
+MAXAGE=86400 // SETUP OPT
 
 
 #AUTH
-SECRET_KEY=// ***!!! SETUP THIS !!!***
-OTP_EXPIRATION=1000*60*10 // ??? SETUP THIS ???
-OTP_DIGITS=8 // ??? SETUP THIS ???
+SECRET_KEY=// !!! SETUP REQ !!!
+OTP_EXPIRATION=1000*60*10 // SETUP OPT
+OTP_DIGITS=8 // SETUP OPT
 
 
-GOOGLE_MAPS_API_KEY= // ??? SETUP THIS ??? "
+GOOGLE_MAPS_API_KEY= // SETUP OPT "
 
 # Function to display help message
 display_help() {
