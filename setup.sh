@@ -4,12 +4,72 @@
 git submodule update --init --recursive
 
 # Constants
-CLIENT_ENV_FILE="work-to-client/.env"
-SERVER_ENV_FILE="work-to-server/.env"
-CLIENT_ENV_CONTENT="VUE_APP_SECRET_KEY=\nVUE_APP_MAPS_API_KEY="
-SERVER_ENV_COMMON="SERVER_HOST=localhost\nSERVER_PORT=8585\nAPP_NAME=work-to-server\nCLIENT_INDEX_PATH=/home/mauro/dev/work-to/client/dist\nMODE="
-SERVER_ENV_PROD="MDB_URI=\nMDB_DATABASE=\nSESSION_DURATION=36000\nJWT_AUDIENCE=localhost\nALLOWED_HOSTS= // !!! WARNING !!!\nMETHODS= // !!! WARNING !!!\nALLOWEDHEADERS= // !!! WARNING !!!\nEXPOSEDHEADERS= // !!! WARNING !!!\nCREDENTIALS= // !!! WARNING !!!\nMAXAGE= // !!! WARNING !!!\nSECRET_KEY=\nOTP_EXPIRATION=1000*60*10\nOTP_DIGITS=8\nGOOGLE_MAPS_API_KEY="
-SERVER_ENV_DEV="MDB_URI=\nMDB_DATABASE=\nSESSION_DURATION=36000\nJWT_AUDIENCE=localhost\nALLOWED_HOSTS=[\"*\"]\nMETHODS=[\"*\"]\nALLOWEDHEADERS=[\"*\"]\nEXPOSEDHEADERS=[\"*\"]\nCREDENTIALS=true\nMAXAGE=86400\nSECRET_KEY=\nOTP_EXPIRATION=1000*60*10\nOTP_DIGITS=8\nGOOGLE_MAPS_API_KEY="
+CLIENT_ENV_FILE="fishingcom-client/.env"
+SERVER_ENV_FILE="fishingcom-server/.env"
+CLIENT_ENV_CONTENT="VUE_APP_SECRET_KEY="
+SERVER_ENV_COMMON="SERVER_HOST=localhost\nSERVER_PORT=8585\nAPP_NAME=fishingcom-server\nCLIENT_INDEX_PATH=/home/mauro/dev/fishingcom/client/dist\nMODE="
+SERVER_ENV_DEV="SERVER_HOST="http://localhost"
+SERVER_PORT=8585
+
+APP_NAME="fishingcom"
+CLIENT_INDEX_PATH="/home/mauro/dev/fishingcom/client/dist"
+
+MODE="dev"
+
+MDB_URI=
+MDB_DATABASE=
+
+
+SESSION_DURATION="36000"
+JWT_AUDIENCE="localhost"
+
+#CORS
+ALLOWED_HOSTS=["*"]
+METHODS= ["*"]
+ALLOWED_HEADERS= ["*"]
+EXPOSED_HEADERS= ["*"]
+CREDENTIALS=true
+MAXAGE=86400
+
+
+#AUTH
+SECRET_KEY=
+OTP_EXPIRATION=1000*60*10
+OTP_DIGITS=8
+
+
+GOOGLE_MAPS_API_KEY="
+
+SERVER_ENV_DEV="SERVER_HOST="http://localhost"
+SERVER_PORT=8585
+
+APP_NAME="fishingcom"
+CLIENT_INDEX_PATH="/home/mauro/dev/fishingcom/client/dist"
+MODE="prod"
+
+MDB_URI= // ***!!! SETUP THIS !!!***
+MDB_DATABASE= // ***!!! SETUP THIS !!!***
+
+
+SESSION_DURATION="36000"
+JWT_AUDIENCE="localhost"
+
+#CORS
+ALLOWED_HOSTS= // ***!!! SETUP THIS !!!***
+METHODS= // ***!!! SETUP THIS !!!***
+ALLOWED_HEADERS= // ***!!! SETUP THIS !!!***
+EXPOSED_HEADERS= // ***!!! SETUP THIS !!!***
+CREDENTIALS=true // ??? SETUP THIS ???
+MAXAGE=86400 // ??? SETUP THIS ???
+
+
+#AUTH
+SECRET_KEY=// ***!!! SETUP THIS !!!***
+OTP_EXPIRATION=1000*60*10 // ??? SETUP THIS ???
+OTP_DIGITS=8 // ??? SETUP THIS ???
+
+
+GOOGLE_MAPS_API_KEY= // ??? SETUP THIS ??? "
 
 # Function to display help message
 display_help() {
